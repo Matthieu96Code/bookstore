@@ -1,5 +1,5 @@
 const Categories = () => (
-  <div>CATEGORIES</div>
+  <button type="button">CHECK STATUS</button>
 );
 
 export default Categories;
