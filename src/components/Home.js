@@ -1,5 +1,7 @@
+import AddBook from './Addbook';
+
 const Home = () => (
-  <div>BOOKS</div>
+  <AddBook />
 );
 
 export default Home;
