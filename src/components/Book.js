@@ -14,16 +14,13 @@ const Book = ({ data }) => (
     </div>
 
     <div>
-      <p>
-        {data.completed}
-        %
-      </p>
+      <p>0%</p>
       <p>Completed</p>
     </div>
 
     <div>
       <h3>CURRENT CHAPTER</h3>
-      <p>{data.chapter}</p>
+      <p>Chapter I</p>
       <button type="button">UPDATE PROGRESS</button>
     </div>
   </section>
@@ -34,8 +31,6 @@ Book.propTypes = {
     category: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    completed: PropTypes.number.isRequired,
-    chapter: PropTypes.string.isRequired,
   }).isRequired,
 };
 
