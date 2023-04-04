@@ -41,6 +41,7 @@
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
     <li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">JavaScript</a></li>
     <li><a href="https://react.dev/">React</a></li>
+    <li><a href="https://redux-toolkit.js.org/">Redux Toolkit</a></li>
   </ul>
 </details>
 
@@ -48,9 +49,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Use of React**
 - **Use of rooter to display two page**
 - **display static array of books**
+- **Allow user to Add and remove book**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +133,6 @@ To run the project, execute the following command
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Use of Redux**
 - [ ] **Connect API**
 - [ ] **styling**
 
