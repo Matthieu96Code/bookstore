@@ -1,11 +1,20 @@
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import { addBook } from '../redux/books/booksSlice';
 
 const AddBook = () => {
   const [titleValue, setTitleValue] = useState();
   const [authorValue, setAuthorValue] = useState();
+  const dispatch = useDispatch();
 
   const onSubmit = (event) => {
     event.preventDefault();
+    dispatch(addBook({
+      item_id: `item${uuidv4()}`,
+      title: titleValue,
+      author: authorValue,
+    }));
   };
   return (
     <div>
