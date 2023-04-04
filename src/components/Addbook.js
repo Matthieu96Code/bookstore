@@ -2,7 +2,6 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/booksSlice';
-// import { checkStatus } from '../redux/categories/categoriesSlice';
 
 const AddBook = () => {
   const [titleValue, setTitleValue] = useState();
