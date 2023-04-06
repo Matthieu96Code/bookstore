@@ -23,6 +23,16 @@ export const sendBooks = createAsyncThunk('books/sendBooks', async (initialPost,
   }
 });
 
+export const removeBooks = createAsyncThunk('books/removeBooks', async (initialPost, thunkAPI) => {
+  try {
+    const resp = await axios.delete(`${url}/${initialPost}`);
+    // await thunkAPI.dispatch(getBooks());
+    return resp.data;
+  } catch (error) {
+    return thunkAPI.rejectWithValue('Thunk Error');
+  }
+});
+
 const initialState = {
   books: [],
   isLoading: true,
@@ -75,6 +85,24 @@ const booksSlice = createSlice({
         books: action.payload,
       }))
       .addCase(sendBooks.rejected, (state, action) => ({
+        ...state,
+        isLoading: false,
+        books: action.payload,
+      }))
+      .addCase(removeBooks.pending, (state) => ({
+        ...state,
+        isLoading: true,
+      }))
+      .addCase(removeBooks.fulfilled, (state, action) => {
+        const bookToRemove = action.payload;
+        const filteredBooks = state.books.filter((book) => book.id !== bookToRemove.id);
+        return {
+          ...state,
+          isLoading: false,
+          books: filteredBooks,
+        };
+      })
+      .addCase(removeBooks.rejected, (state, action) => ({
         ...state,
         isLoading: false,
         books: action.payload,
