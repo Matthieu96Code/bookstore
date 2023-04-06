@@ -13,6 +13,16 @@ export const getBooks = createAsyncThunk('books/getBooks', async (thunkAPI) => {
   }
 });
 
+export const sendBooks = createAsyncThunk('books/sendBooks', async (initialPost, thunkAPI) => {
+  try {
+    const resp = await axios.post(url, initialPost);
+    return resp.data;
+  } catch (error) {
+    // return err.message;
+    return thunkAPI.rejectWithValue('Thunk Error');
+  }
+});
+
 const initialState = {
   books: [],
   isLoading: true,
@@ -52,6 +62,19 @@ const booksSlice = createSlice({
         });
       })
       .addCase(getBooks.rejected, (state, action) => ({
+        ...state,
+        isLoading: false,
+        books: action.payload,
+      }))
+      .addCase(sendBooks.pending, (state) => ({
+        ...state,
+        isLoading: true,
+      }))
+      .addCase(sendBooks.fulfilled, (state, action) => ({
+        ...state,
+        books: action.payload,
+      }))
+      .addCase(sendBooks.rejected, (state, action) => ({
         ...state,
         isLoading: false,
         books: action.payload,
