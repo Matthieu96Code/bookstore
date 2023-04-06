@@ -1,8 +1,8 @@
-import { createSlice } from '@reduxjs/toolkit';
-import bookItems from './bookItems';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
-  books: bookItems,
+  books: [],
   isLoading: true,
 };
 
