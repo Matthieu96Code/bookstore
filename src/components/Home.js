@@ -19,7 +19,7 @@ const Home = () => {
     };
 
     fetchData();
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (Array.isArray(books)) {
