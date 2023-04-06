@@ -50,7 +50,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Use of rooter to display two page**
-- **display static array of books**
+- **Fetch Data from api**
 - **Allow user to Add and remove book**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -133,7 +133,6 @@ To run the project, execute the following command
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **Connect API**
 - [ ] **styling**
 
 
