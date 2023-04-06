@@ -8,7 +8,6 @@ export const getBooks = createAsyncThunk('books/getBooks', async (thunkAPI) => {
     const resp = await axios.get(url);
     return resp.data;
   } catch (error) {
-    // return err.message;
     return thunkAPI.rejectWithValue('Thunk Error');
   }
 });
@@ -18,7 +17,6 @@ export const sendBooks = createAsyncThunk('books/sendBooks', async (initialPost,
     const resp = await axios.post(url, initialPost);
     return resp.data;
   } catch (error) {
-    // return err.message;
     return thunkAPI.rejectWithValue('Thunk Error');
   }
 });
@@ -26,7 +24,6 @@ export const sendBooks = createAsyncThunk('books/sendBooks', async (initialPost,
 export const removeBooks = createAsyncThunk('books/removeBooks', async (initialPost, thunkAPI) => {
   try {
     const resp = await axios.delete(`${url}/${initialPost}`);
-    // await thunkAPI.dispatch(getBooks());
     return resp.data;
   } catch (error) {
     return thunkAPI.rejectWithValue('Thunk Error');
