@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { removeBooks, getBooks } from '../redux/books/booksSlice';
+import Records from '../records.json';
 
 const Book = ({ data, id }) => {
   const dispatch = useDispatch();
@@ -32,7 +32,16 @@ const Book = ({ data, id }) => {
       </div>
 
       <div className="book-progress">
-        <AiOutlineLoading3Quarters className="progress-bar" size="4rem" color="#0290ff" />
+        {/* <img src="./img/progress.png" alt="circular progress" /> */}
+        <div className="inner">
+          {
+            Records && Records.map((record) => (
+              <div className="box" key={record.id}>
+                <img src={record.icon} alt={record.caption} />
+              </div>
+            ))
+          }
+        </div>
         <div className="progress-text">
           <p className="percent-complete">
             {Math.floor(Math.random(100) * 100)}

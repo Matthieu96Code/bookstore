@@ -110,7 +110,7 @@ body {
 }
 
 .book-info {
-  flex-grow: 30;
+  width: 50%;
 }
 
 .book-info h1 {
@@ -164,10 +164,18 @@ body {
   border-right: solid 1px #e8e8e8;
 }
 
+.box img {
+  width: 90px;
+}
+
 .book-progress {
   display: flex;
   justify-content: space-between;
-  flex-grow: 2;
+  width: 20%;
+  margin: auto;
+}
+
+.progress-text {
   margin: auto;
 }
 
