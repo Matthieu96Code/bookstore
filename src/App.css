@@ -88,3 +88,68 @@ body {
 .book-List {
   background-color: var(--z);
 }
+
+.book-card {
+  background-color: var(--white-two);
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 5%;
+  border: solid 2px var(--pale-grey);
+  padding: 3% 6% 1% 2%;
+  flex-wrap: wrap;
+}
+
+.book-info {
+  flex-grow: 30;
+}
+
+.book-info h1 {
+  opacity: 0.5;
+  font-size: 14px;
+  letter-spacing: normal;
+  color: #121212;
+  padding-bottom: 1%;
+}
+
+.book-info h2,
+.book-info h3,
+.book-info button,
+.book-status h3,
+.book-status p,
+.book-status button {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+}
+
+.book-info h2 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book-info button {
+  background-color: var(--white-two);
+  padding: 0 3%;
+  border: none;
+}
+
+.book-action-button {
+  padding: 2% 0;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar-verti {
+  margin: auto;
+  height: 30px;
+  border-right: solid 1px #e8e8e8;
+}
