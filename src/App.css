@@ -241,3 +241,65 @@ body {
   padding-left: 1%;
   margin-right: 2%;
 }
+
+.addbook-form input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  color: var(--very-light-pink);
+}
+
+.addbook-form button {
+  background-color: var(--azure);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: var(--white-two);
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 12px 19px;
+}
+
+.addbook-form select {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.15px;
+  border: 2px solid var(--pale-grey);
+  flex-grow: 1;
+  padding-left: 1%;
+  margin-right: 2%;
+  cursor: pointer;
+  color: var(--very-light-pink);
+}
+
+.addbook-form .select-choice {
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+}
+
+.addbook-form button:hover,
+.book-status button:hover {
+  background-color: var(--white-two);
+  color: var(--azure);
+  border: 2px solid var(--azure);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.book-info button:hover {
+  background-color: var(--azure);
+  cursor: pointer;
+  color: var(--white-two);
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.book-state {
+  font-size: larger;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 5%;
+  color: var(--azure);
+}
+
+.panel-bg .active-link {
+  color: var(--azure);
+}
