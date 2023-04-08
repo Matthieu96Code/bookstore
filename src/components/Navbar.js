@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsPersonCircle } from 'react-icons/bs';
 import { NavLink } from 'react-router-dom';
 
 const links = [
@@ -11,10 +12,17 @@ const Navbar = () => (
     <ul className="menuList">
       {links.map((link) => (
         <li className="listElement" key={link.text}>
-          <NavLink to={link.path} className="linkedList">{link.text}</NavLink>
+          <NavLink
+            to={link.path}
+            className={({ isActive }) => (isActive ? 'active-link' : undefined)}
+          >
+            {link.text}
+
+          </NavLink>
         </li>
       ))}
     </ul>
+    <BsPersonCircle className="user-icon" size="2rem" color="#0290ff" />
   </nav>
 );
 export default Navbar;

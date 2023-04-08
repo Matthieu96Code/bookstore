@@ -1,4 +1,323 @@
-.book-card {
+/* import fon */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+
+:root {
+  --pale-grey: #f5f6fa;
+  --white-two: #fff;
+  --azure: #0290ff;
+  --z: #fafafa;
+  --cool-blue: #4386bf;
+  --black-two: #121212;
+  --pinkish-grey: #c7c7c7;
+  --very-light-pink: #c4c4c4;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  background-color: var(--pale-grey);
   display: flex;
-  margin: 1% 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bookstore-CMS {
+  margin: auto;
+  width: 90vw;
+  background-color: var(--z);
+  padding-bottom: 16.563rem;
+}
+
+.panel-bg {
+  padding: 23px 5%;
+  background-color: var(--white-two);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel-bg h1,
+.panel-bg a,
+.book-info h1,
+.book-progress p,
+.addbook-section,
+.addbook-form input::placeholder,
+.addbook-form button,
+.addbook-form select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.panel-bg a {
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.navbar {
+  width: calc(95% - 238px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+}
+
+.menuList {
+  width: 85%;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-icon {
+  justify-self: end;
+  cursor: pointer;
+}
+
+.book-List {
+  background-color: var(--z);
+}
+
+.book-card {
+  background-color: var(--white-two);
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 5%;
+  border: solid 2px var(--pale-grey);
+  padding: 3% 6% 1% 2%;
+  flex-wrap: wrap;
+}
+
+.book-info {
+  width: 50%;
+}
+
+.book-info h1 {
+  opacity: 0.5;
+  font-size: 14px;
+  letter-spacing: normal;
+  color: #121212;
+  padding-bottom: 1%;
+}
+
+.book-info h2,
+.book-info h3,
+.book-info button,
+.book-status h3,
+.book-status p,
+.book-status button {
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool-blue);
+}
+
+.book-info h2 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book-info button {
+  background-color: var(--white-two);
+  padding: 0 3%;
+  border: none;
+}
+
+.book-action-button {
+  padding: 2% 0;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar-verti {
+  margin: auto;
+  height: 30px;
+  border-right: solid 1px #e8e8e8;
+}
+
+.box img {
+  width: 90px;
+}
+
+.book-progress {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: auto;
+}
+
+.progress-text {
+  margin: auto;
+}
+
+.book-progress .percent-complete {
+  color: var(--black-two);
+  font-size: 32px;
+}
+
+.book-progress .complete {
+  color: var(--black-two);
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.bar-verti2 {
+  margin: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 60px;
+  border-right: solid 1px #e8e8e8;
+}
+
+.book-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.book-status h3 {
+  opacity: 0.5;
+  font-size: 13px;
+  color: var(--black-two);
+}
+
+.book-status p {
+  margin: 5% 0 8% 0;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  color: var(--black-two);
+}
+
+.book-status button {
+  background-color: var(--azure);
+  color: var(--white-two);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  padding: 7px 15px;
+  border: 2px solid;
+  border-radius: 5%;
+}
+
+.bar-horiz {
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+  border-bottom: solid 1px #e8e8e8;
+}
+
+.addbook-section {
+  margin: 3% 5%;
+}
+
+.addbook-section h2 {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.addbook-form {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.addbook-form input {
+  border: 2px solid var(--pale-grey);
+  flex-grow: 1;
+  padding-left: 1%;
+  margin-right: 2%;
+}
+
+.addbook-form input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: -0.15px;
+  color: var(--very-light-pink);
+}
+
+.addbook-form button {
+  background-color: var(--azure);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  color: var(--white-two);
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 12px 19px;
+}
+
+.addbook-form select {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.15px;
+  border: 2px solid var(--pale-grey);
+  flex-grow: 1;
+  padding-left: 1%;
+  margin-right: 2%;
+  cursor: pointer;
+  color: var(--very-light-pink);
+}
+
+.addbook-form .select-choice {
+  font-family: 'Montserrat', sans-serif;
+  color: #121212;
+}
+
+.addbook-form button:hover,
+.book-status button:hover {
+  background-color: var(--white-two);
+  color: var(--azure);
+  border: 2px solid var(--azure);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.book-info button:hover {
+  background-color: var(--azure);
+  cursor: pointer;
+  color: var(--white-two);
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.book-state {
+  font-size: larger;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 5%;
+  color: var(--azure);
+}
+
+.panel-bg .active-link {
+  color: var(--azure);
 }

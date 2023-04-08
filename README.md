@@ -52,6 +52,7 @@
 - **Use of rooter to display two page**
 - **Fetch Data from api**
 - **Allow user to Add and remove book**
+- **Add style**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,7 +134,7 @@ To run the project, execute the following command
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **styling**
+- [ ] **More responsiveness**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
