@@ -71,3 +71,20 @@ body {
   justify-content: space-between;
   padding-left: 5%;
 }
+
+.menuList {
+  width: 85%;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-icon {
+  justify-self: end;
+  cursor: pointer;
+}
+
+.book-List {
+  background-color: var(--z);
+}
