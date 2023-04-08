@@ -24,3 +24,50 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.Bookstore-CMS {
+  margin: auto;
+  width: 90vw;
+  height: 90vh;
+  background-color: var(--z);
+}
+
+.panel-bg {
+  padding: 23px 5%;
+  background-color: var(--white-two);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel-bg h1,
+.panel-bg a,
+.book-info h1,
+.book-progress p,
+.addbook-section,
+.addbook-form input::placeholder,
+.addbook-form button,
+.addbook-form select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.panel-bg a {
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.navbar {
+  width: calc(95% - 238px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+}
