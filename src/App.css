@@ -216,3 +216,28 @@ body {
   width: 90%;
   border-bottom: solid 1px #e8e8e8;
 }
+
+.addbook-section {
+  margin: 3% 5%;
+}
+
+.addbook-section h2 {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.addbook-form {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.addbook-form input {
+  border: 2px solid var(--pale-grey);
+  flex-grow: 1;
+  padding-left: 1%;
+  margin-right: 2%;
+}
