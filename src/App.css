@@ -29,7 +29,6 @@ a {
 
 body {
   width: 100vw;
-  height: 100vh;
   background-color: var(--pale-grey);
   display: flex;
   justify-content: center;
@@ -39,8 +38,8 @@ body {
 .Bookstore-CMS {
   margin: auto;
   width: 90vw;
-  height: 90vh;
   background-color: var(--z);
+  padding-bottom: 16.563rem;
 }
 
 .panel-bg {
