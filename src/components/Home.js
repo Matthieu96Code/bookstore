@@ -23,7 +23,25 @@ const Home = () => {
 
   useEffect(() => {
     if (Array.isArray(books)) {
-      setBookList(
+      setBookList();
+    } else if (!isLoading) {
+      setBookList(<p className="book-state">No books found.</p>);
+    }
+  }, [books, isLoading]);
+
+  if (isLoading) {
+    return (
+      <>
+        <h1 className="book-state">Loading...</h1>
+        <div className="bar-horiz" />
+        <AddBook />
+      </>
+    );
+  }
+
+  if (Array.isArray(books) && books[0] !== undefined) {
+    return (
+      <>
         <div className="book-list">
           {books.map((data) => (
             <Book
@@ -32,17 +50,8 @@ const Home = () => {
               id={Object.keys(data)[0]}
             />
           ))}
-        </div>,
-      );
-    } else if (!isLoading) {
-      setBookList(<p>No books found.</p>);
-    }
-  }, [books, isLoading]);
-
-  if (isLoading) {
-    return (
-      <>
-        <h1>Loading...</h1>
+        </div>
+        <div className="bar-horiz" />
         <AddBook />
       </>
     );
@@ -51,7 +60,8 @@ const Home = () => {
   return (
     <>
       {bookList}
-      <h1>Book list empty</h1>
+      <div className="bar-horiz" />
+      <h1 className="book-state">Book list empty</h1>
       <AddBook />
     </>
   );

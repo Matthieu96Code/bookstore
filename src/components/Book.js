@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { removeBooks, getBooks } from '../redux/books/booksSlice';
 
 const Book = ({ data, id }) => {
@@ -12,28 +13,36 @@ const Book = ({ data, id }) => {
   };
   return (
     <section className="book-card">
-      <div>
+      <div className="book-info">
         <h1>{category}</h1>
         <h2>{title}</h2>
         <h3>{author}</h3>
-        <div>
+        <div className="book-action-button">
           <button type="button">Comments</button>
+          <div className="bar-verti" />
           <button
             type="button"
             onClick={handleRemoveBook}
           >
             Remove
           </button>
+          <div className="bar-verti" />
           <button type="button">Edit</button>
         </div>
       </div>
 
-      <div>
-        <p>0%</p>
-        <p>Completed</p>
+      <div className="book-progress">
+        <AiOutlineLoading3Quarters className="progress-bar" size="4rem" color="#0290ff" />
+        <div className="progress-text">
+          <p className="percent-complete">
+            {Math.floor(Math.random(100) * 100)}
+            %
+          </p>
+          <p className="complete">Completed</p>
+        </div>
       </div>
-
-      <div>
+      <div className="bar-verti2" />
+      <div className="book-status">
         <h3>CURRENT CHAPTER</h3>
         <p>Chapter I</p>
         <button type="button">UPDATE PROGRESS</button>
@@ -48,6 +57,7 @@ Book.propTypes = {
     category: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
+    progress: PropTypes.number.isRequired,
   }).isRequired,
 };
 

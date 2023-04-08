@@ -2,8 +2,8 @@ import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 
 const Layout = () => (
-  <div className="layout">
-    <div className="mainbar">
+  <div className="Bookstore-CMS">
+    <div className="panel-bg">
       <h1 className="mainTitle">Bookstore CMS</h1>
       <Navbar />
     </div>
