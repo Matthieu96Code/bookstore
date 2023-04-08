@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
 
+:root {
+  --pale-grey: #f5f6fa;
+  --white-two: #fff;
+  --azure: #0290ff;
+  --z: #fafafa;
+  --cool-blue: #4386bf;
+  --black-two: #121212;
+  --pinkish-grey: #c7c7c7;
+  --very-light-pink: #c4c4c4;
+}
+
 li {
   list-style-type: none;
 }
