@@ -153,3 +153,29 @@ body {
   height: 30px;
   border-right: solid 1px #e8e8e8;
 }
+
+.book-progress {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 2;
+  margin: auto;
+}
+
+.book-progress .percent-complete {
+  color: var(--black-two);
+  font-size: 32px;
+}
+
+.book-progress .complete {
+  color: var(--black-two);
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.bar-verti2 {
+  margin: auto;
+  margin-right: 5%;
+  margin-left: 5%;
+  height: 50px;
+  border-right: solid 1px #e8e8e8;
+}
