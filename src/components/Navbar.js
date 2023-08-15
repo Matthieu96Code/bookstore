@@ -14,7 +14,7 @@ const Navbar = () => (
         <li className="listElement" key={link.text}>
           <NavLink
             to={link.path}
-            className={({ isActive }) => (isActive ? 'active-link' : undefined)}
+            className={({ isActive }) => (isActive ? 'active-link' : 'non-active')}
           >
             {link.text}
 
