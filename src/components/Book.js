@@ -37,7 +37,7 @@ const Book = ({ data, id }) => {
           {
             Records && Records.map((record) => (
               <div className="box" key={record.id}>
-                <img src={record.icon} alt={record.caption} />
+                <img src="./img/progress.png" alt={record.caption} />
               </div>
             ))
           }
