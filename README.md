@@ -60,7 +60,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> coming soon
+- [Live demo on render](https://bookstore-vyyv.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
