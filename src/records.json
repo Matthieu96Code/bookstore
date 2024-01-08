@@ -2,6 +2,6 @@
   {
     "id": 1,
     "caption": "circular-progress",
-    "icon": "img/progress.png"
+    "icon": "./img/progress.png"
   }
 ]
