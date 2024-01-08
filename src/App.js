@@ -8,7 +8,7 @@ import Categories from './components/Categories';
 function App() {
   return (
     <Routes className="App">
-      <Route path="/bookstore" element={<Layout />}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="categories" element={<Categories />} />
       </Route>
